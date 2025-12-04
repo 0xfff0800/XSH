@@ -1,0 +1,16 @@
+digraph "loop_function" {
+    rankdir=TB;
+    node [shape=box, style=filled, fontname="Courier New"];
+
+    block_100001000 [label="0x100001000: SUB SP, SP, #0x20\n0x100001004: STP X29, X30, [SP, #0x10]\n0x100001008: MOV X1, #0", fillcolor=lightblue];
+    block_10000100c [label="0x10000100c: CMP X1, X0\n0x100001010: B.GE loc_100001024", fillcolor=lightyellow];
+    block_100001014 [label="0x100001014: BL sub_100002000", fillcolor=lightgray];
+    block_100001018 [label="0x100001018: ADD X1, X1, #1\n0x10000101c: B loc_10000100c", fillcolor=lightgray];
+    block_100001024 [label="0x100001024: LDP X29, X30, [SP, #0x10]\n0x100001028: ADD SP, SP, #0x20\n0x10000102c: RET ", fillcolor=lightcoral];
+
+    block_100001000 -> block_10000100c [color=green, style=solid];
+    block_10000100c -> block_100001024 [color=red, style=solid, label="T"];
+    block_10000100c -> block_100001014 [color=red, style=solid, label="F"];
+    block_100001014 -> block_100001018 [color=green, style=solid];
+    block_100001018 -> block_10000100c [color=red, style=bold];
+}

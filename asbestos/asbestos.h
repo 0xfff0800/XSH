@@ -5,9 +5,9 @@
 #include "util/list.h"
 #include "util/sync.h"
 
-#define FIBER_INITIAL_HASH_SIZE (1 << 10)
-#define FIBER_CACHE_SIZE (1 << 10)
-#define FIBER_PAGE_HASH_SIZE (1 << 10)
+#define FIBER_INITIAL_HASH_SIZE (1 << 12)
+#define FIBER_CACHE_SIZE (1 << 12)
+#define FIBER_PAGE_HASH_SIZE (1 << 12)
 
 struct asbestos {
     // there is one asbestos per address space

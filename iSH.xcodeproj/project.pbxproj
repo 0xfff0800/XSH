@@ -21,7 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		07626BFF2ED4C8C900E98EF4 /* SplitTerminalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07626BFA2ED4C8C900E98EF4 /* SplitTerminalViewController.m */; };
+		07626C022ED4C8C900E98EF4 /* CodeEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07626BF82ED4C8C900E98EF4 /* CodeEditorViewController.m */; };
+		07626C032ED4C8C900E98EF4 /* ReverseEngineeringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07626BFC2ED4C8C900E98EF4 /* ReverseEngineeringViewController.m */; };
+		0C2B184789636EFC2A9A85AD /* LazyDisassembler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B87FD24352697B5840D8816 /* LazyDisassembler.m */; };
+		0ECE621086700FA55956C222 /* BasicBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = E8DAD44ADA912E712B8B2B50 /* BasicBlock.m */; };
 		0FC2383C2991FBA6004C09EC /* mmx.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FC2383B2991FB82004C09EC /* mmx.c */; };
+		1I2F8G7G9FIL0L4HI4N08901 /* PseudoCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3I7H6I9GIK0K4GH4N08901 /* PseudoCodeGenerator.m */; };
+		236CB2C7988005F43538BBA5 /* SyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 741780E55E91317AF0449F0D /* SyntaxHighlighter.m */; };
+		3CF87CFA59CE33AD98A07998 /* ObjCAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BE7C4F9021758740A64B6 /* ObjCAnalyzer.m */; };
 		491B31E62883BF22008EEFB0 /* ThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491B31E52883BF22008EEFB0 /* ThemeViewController.m */; };
 		49302D8E277669D300C9885A /* ish.c in Sources */ = {isa = PBXBuildFile; fileRef = 49302D8D277669D300C9885A /* ish.c */; };
 		496C7AB227CC697E005D7613 /* Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 491C4C1E27C8FB65008B1DFA /* Theme.m */; };
@@ -104,6 +112,12 @@
 		497F6D5C254E609700C82F46 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7D93822087C2890008DA78 /* main.c */; };
 		497F6D87254E62E100C82F46 /* libish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB13F7DC200AD81D003D1C4D /* libish.a */; };
 		49FF844B2A06249F00850B7A /* ExceptionExfiltrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FF844A2A06249F00850B7A /* ExceptionExfiltrator.m */; };
+		508B7BFF62BD97726C8EE96E /* SystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA6B5A35EDE141A52A9F50 /* SystemMonitor.m */; };
+		79C63A254FA2842BF71DA5B3 /* SymbolResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3C133AC4B08DCE176A19BA /* SymbolResolver.m */; };
+		7E8B4C3C5BEG6G0CD0I04567 /* ARM64InstructionDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B9F3E204CD55F9AB8G02345 /* ARM64InstructionDecoder.m */; };
+		80BABCE813E53C955779B7C5 /* CFGBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC16B7DEA49FA0DB044FD96 /* CFGBuilder.m */; };
+		9DC37D7AB3F5CAE0E5E10CED /* MachOParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C242DFD752ECEEB5E9B460CB /* MachOParser.m */; };
+		9G0D6E5E7DGI8I2EF2L06789 /* FunctionAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1G5F4G7EG88H2CD2K06789 /* FunctionAnalyzer.m */; };
 		BB0F552E239F8A790032A2A1 /* Icons.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB0F552D239F8A790032A2A1 /* Icons.plist */; };
 		BB10E5C9248DBAAC009C7A74 /* libarchive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB10E5C8248DBAA1009C7A74 /* libarchive.a */; };
 		BB10E5D0248DC21D009C7A74 /* Roots.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB10E5CF248DC21D009C7A74 /* Roots.storyboard */; };
@@ -244,6 +258,8 @@
 		BBFB2C7E259026C200545EAB /* libish_emu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFB2C5B2590257E00545EAB /* libish_emu.a */; };
 		BBFB2CEC2590296B00545EAB /* libish_emu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFB2C5B2590257E00545EAB /* libish_emu.a */; };
 		BBFB55662158644C00DFE6DE /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFB55652158644C00DFE6DE /* libresolv.tbd */; };
+		BC1794C1BABA38B2944840A2 /* StackFrameTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = B082DE63C7380AA3DC6E33B7 /* StackFrameTracker.m */; };
+		FF7417A4114785A05FB70E36 /* XREFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A970D2304C6E060A3BA27F1B /* XREFManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -426,7 +442,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07626BF72ED4C8C900E98EF4 /* CodeEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeEditorViewController.h; sourceTree = "<group>"; };
+		07626BF82ED4C8C900E98EF4 /* CodeEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeEditorViewController.m; sourceTree = "<group>"; };
+		07626BF92ED4C8C900E98EF4 /* SplitTerminalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitTerminalViewController.h; sourceTree = "<group>"; };
+		07626BFA2ED4C8C900E98EF4 /* SplitTerminalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitTerminalViewController.m; sourceTree = "<group>"; };
+		07626BFB2ED4C8C900E98EF4 /* ReverseEngineeringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseEngineeringViewController.h; sourceTree = "<group>"; };
+		07626BFC2ED4C8C900E98EF4 /* ReverseEngineeringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseEngineeringViewController.m; sourceTree = "<group>"; };
+		0B871FED53C593D9F8F8B0FE /* StackFrameTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StackFrameTracker.h; sourceTree = "<group>"; };
+		0C3C133AC4B08DCE176A19BA /* SymbolResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SymbolResolver.m; sourceTree = "<group>"; };
+		0E2H6G5H8FHJ9J3FG3M07890 /* PseudoCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PseudoCodeGenerator.h; sourceTree = "<group>"; };
 		0FC2383B2991FB82004C09EC /* mmx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mmx.c; sourceTree = "<group>"; };
+		10A04A3CA878190AD2C7103F /* BasicBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BasicBlock.h; sourceTree = "<group>"; };
+		1B87FD24352697B5840D8816 /* LazyDisassembler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LazyDisassembler.m; sourceTree = "<group>"; };
+		1F3I7H6I9GIK0K4GH4N08901 /* PseudoCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PseudoCodeGenerator.m; sourceTree = "<group>"; };
+		2D47C8740B6B4C20B140311C /* ObjCAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCAnalyzer.h; sourceTree = "<group>"; };
+		2FB586879FCCF7A7994A58EA /* LazyDisassembler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LazyDisassembler.h; sourceTree = "<group>"; };
 		408A2639236440F8008A4E81 /* iOSFS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSFS.m; sourceTree = "<group>"; };
 		408A263B23644102008A4E81 /* iOSFS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSFS.h; sourceTree = "<group>"; };
 		49087C13295DF0490058075B /* hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hook.h; sourceTree = "<group>"; };
@@ -588,12 +618,26 @@
 		497F6D47254E605F00C82F46 /* ish */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ish; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FF844A2A06249F00850B7A /* ExceptionExfiltrator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExceptionExfiltrator.m; sourceTree = "<group>"; };
 		49FF844C2A0624AF00850B7A /* ExceptionExfiltrator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExceptionExfiltrator.h; sourceTree = "<group>"; };
+		4A8E2D1F3BC44E89A7F01234 /* ARM64InstructionDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARM64InstructionDecoder.h; sourceTree = "<group>"; };
+		53D203075BA28ECF77C927AE /* MachOParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MachOParser.h; sourceTree = "<group>"; };
+		5B9F3E204CD55F9AB8G02345 /* ARM64InstructionDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARM64InstructionDecoder.m; sourceTree = "<group>"; };
 		650B337222EA235C00B4C03E /* PasteboardDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteboardDevice.h; sourceTree = "<group>"; };
 		650B337322EA235C00B4C03E /* PasteboardDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteboardDevice.m; sourceTree = "<group>"; };
+		6AC16B7DEA49FA0DB044FD96 /* CFGBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CFGBuilder.m; sourceTree = "<group>"; };
+		6CCA0A264626F0F573E6A7C4 /* SystemMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SystemMonitor.h; sourceTree = "<group>"; };
+		741780E55E91317AF0449F0D /* SyntaxHighlighter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighlighter.m; sourceTree = "<group>"; };
+		7B6E41ECF6C967870E06F4DD /* XREFManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = XREFManager.h; sourceTree = "<group>"; };
 		8632A7BD219A59FB00F02325 /* UserPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPreferences.h; sourceTree = "<group>"; };
 		8632A7BE219A59FB00F02325 /* UserPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPreferences.m; sourceTree = "<group>"; };
+		8AEA6B5A35EDE141A52A9F50 /* SystemMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SystemMonitor.m; sourceTree = "<group>"; };
+		8C0F4E3F6DF77G1BC1J05678 /* FunctionAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionAnalyzer.h; sourceTree = "<group>"; };
 		9A28E4E8219A8B670073D200 /* AboutAppearanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutAppearanceViewController.h; sourceTree = "<group>"; };
 		9A28E4E9219A8B670073D200 /* AboutAppearanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutAppearanceViewController.m; sourceTree = "<group>"; };
+		9D1G5F4G7EG88H2CD2K06789 /* FunctionAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionAnalyzer.m; sourceTree = "<group>"; };
+		9F1BE7C4F9021758740A64B6 /* ObjCAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCAnalyzer.m; sourceTree = "<group>"; };
+		A3BC004D77CE6E0BE5E437C5 /* SyntaxHighlighter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SyntaxHighlighter.h; sourceTree = "<group>"; };
+		A970D2304C6E060A3BA27F1B /* XREFManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = XREFManager.m; sourceTree = "<group>"; };
+		B082DE63C7380AA3DC6E33B7 /* StackFrameTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = StackFrameTracker.m; sourceTree = "<group>"; };
 		BB0B848E2586A4CF00208600 /* XcodeDefault.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XcodeDefault.xcconfig; sourceTree = "<group>"; };
 		BB0B859B2586F13200208600 /* XcodeDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XcodeDebug.xcconfig; sourceTree = "<group>"; };
 		BB0B859C2586F19000208600 /* XcodeRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = XcodeRelease.xcconfig; sourceTree = "<group>"; };
@@ -673,7 +717,7 @@
 		BB6DB260216435330047A611 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		BB78AB291FAD22440013E782 /* TerminalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TerminalView.h; sourceTree = "<group>"; };
 		BB78AB2A1FAD22440013E782 /* TerminalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TerminalView.m; sourceTree = "<group>"; };
-		BB792B501F96D90D00FFB7A4 /* iSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB792B501F96D90D00FFB7A4 /* XSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB792B531F96D90D00FFB7A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB792B541F96D90D00FFB7A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BB792B561F96D90D00FFB7A4 /* TerminalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TerminalViewController.h; sourceTree = "<group>"; };
@@ -750,6 +794,10 @@
 		BBFB557B215878C600DFE6DE /* UIApplication+OpenURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+OpenURL.m"; sourceTree = "<group>"; };
 		BBFB557E21587B6800DFE6DE /* ArrowBarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrowBarButton.h; sourceTree = "<group>"; };
 		BBFB557F21587B6800DFE6DE /* ArrowBarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrowBarButton.m; sourceTree = "<group>"; };
+		BEB36248591B426BCB41903A /* SymbolResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SymbolResolver.h; sourceTree = "<group>"; };
+		C242DFD752ECEEB5E9B460CB /* MachOParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MachOParser.m; sourceTree = "<group>"; };
+		E8DAD44ADA912E712B8B2B50 /* BasicBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BasicBlock.m; sourceTree = "<group>"; };
+		EE58474793D716127AFE90E5 /* CFGBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CFGBuilder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -858,6 +906,20 @@
 				497F6C3A254E5C4F00C82F46 /* bits.S */,
 			);
 			path = "gadgets-aarch64";
+			sourceTree = "<group>";
+		};
+		576E26C8C55376A66FEDEFFB /* Disassembler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Disassembler;
+			sourceTree = "<group>";
+		};
+		582DB025ECE143F09E013BE8 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Analysis;
 			sourceTree = "<group>";
 		};
 		BB0B848D2586A4B100208600 /* Configs */ = {
@@ -1027,7 +1089,7 @@
 		BB792B511F96D90D00FFB7A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB792B501F96D90D00FFB7A4 /* iSH.app */,
+				BB792B501F96D90D00FFB7A4 /* XSH.app */,
 				BB88F4902154760800A341FD /* iSHFileProvider.appex */,
 				BB13F7DC200AD81D003D1C4D /* libish.a */,
 				BBFB2C5B2590257E00545EAB /* libish_emu.a */,
@@ -1047,6 +1109,20 @@
 		BB792B521F96D90D00FFB7A4 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				07626BF72ED4C8C900E98EF4 /* CodeEditorViewController.h */,
+				07626BF82ED4C8C900E98EF4 /* CodeEditorViewController.m */,
+				07626BF92ED4C8C900E98EF4 /* SplitTerminalViewController.h */,
+				07626BFA2ED4C8C900E98EF4 /* SplitTerminalViewController.m */,
+				07626BFB2ED4C8C900E98EF4 /* ReverseEngineeringViewController.h */,
+				07626BFC2ED4C8C900E98EF4 /* ReverseEngineeringViewController.m */,
+				2D47C8740B6B4C20B140311C /* ObjCAnalyzer.h */,
+				9F1BE7C4F9021758740A64B6 /* ObjCAnalyzer.m */,
+				4A8E2D1F3BC44E89A7F01234 /* ARM64InstructionDecoder.h */,
+				5B9F3E204CD55F9AB8G02345 /* ARM64InstructionDecoder.m */,
+				8C0F4E3F6DF77G1BC1J05678 /* FunctionAnalyzer.h */,
+				9D1G5F4G7EG88H2CD2K06789 /* FunctionAnalyzer.m */,
+				0E2H6G5H8FHJ9J3FG3M07890 /* PseudoCodeGenerator.h */,
+				1F3I7H6I9GIK0K4GH4N08901 /* PseudoCodeGenerator.m */,
 				BB792B531F96D90D00FFB7A4 /* AppDelegate.h */,
 				BB792B541F96D90D00FFB7A4 /* AppDelegate.m */,
 				BB565EA52734F22D00C93EAE /* CurrentRoot.h */,
@@ -1079,6 +1155,26 @@
 				BB88F4A4215476BA00A341FD /* iSH.entitlements */,
 				BB88F4912154760800A341FD /* FileProvider */,
 				BB41591D255EF9E300E0950C /* UITests */,
+				7B6E41ECF6C967870E06F4DD /* XREFManager.h */,
+				A970D2304C6E060A3BA27F1B /* XREFManager.m */,
+				A3BC004D77CE6E0BE5E437C5 /* SyntaxHighlighter.h */,
+				741780E55E91317AF0449F0D /* SyntaxHighlighter.m */,
+				2FB586879FCCF7A7994A58EA /* LazyDisassembler.h */,
+				1B87FD24352697B5840D8816 /* LazyDisassembler.m */,
+				6CCA0A264626F0F573E6A7C4 /* SystemMonitor.h */,
+				8AEA6B5A35EDE141A52A9F50 /* SystemMonitor.m */,
+				576E26C8C55376A66FEDEFFB /* Disassembler */,
+				582DB025ECE143F09E013BE8 /* Analysis */,
+				53D203075BA28ECF77C927AE /* MachOParser.h */,
+				C242DFD752ECEEB5E9B460CB /* MachOParser.m */,
+				BEB36248591B426BCB41903A /* SymbolResolver.h */,
+				0C3C133AC4B08DCE176A19BA /* SymbolResolver.m */,
+				0B871FED53C593D9F8F8B0FE /* StackFrameTracker.h */,
+				B082DE63C7380AA3DC6E33B7 /* StackFrameTracker.m */,
+				10A04A3CA878190AD2C7103F /* BasicBlock.h */,
+				E8DAD44ADA912E712B8B2B50 /* BasicBlock.m */,
+				EE58474793D716127AFE90E5 /* CFGBuilder.h */,
+				6AC16B7DEA49FA0DB044FD96 /* CFGBuilder.m */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -1497,7 +1593,7 @@
 			);
 			name = iSH;
 			productName = iSH;
-			productReference = BB792B501F96D90D00FFB7A4 /* iSH.app */;
+			productReference = BB792B501F96D90D00FFB7A4 /* XSH.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BB88F48F2154760800A341FD /* iSHFileProvider */ = {
@@ -2127,9 +2223,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07626BFF2ED4C8C900E98EF4 /* SplitTerminalViewController.m in Sources */,
+				07626C022ED4C8C900E98EF4 /* CodeEditorViewController.m in Sources */,
+				07626C032ED4C8C900E98EF4 /* ReverseEngineeringViewController.m in Sources */,
+				3CF87CFA59CE33AD98A07998 /* ObjCAnalyzer.m in Sources */,
+				7E8B4C3C5BEG6G0CD0I04567 /* ARM64InstructionDecoder.m in Sources */,
+				9G0D6E5E7DGI8I2EF2L06789 /* FunctionAnalyzer.m in Sources */,
+				1I2F8G7G9FIL0L4HI4N08901 /* PseudoCodeGenerator.m in Sources */,
 				BB28C7BB268975AE00BDC834 /* LocationDevice.m in Sources */,
 				BB28C7BA268975AA00BDC834 /* iOSFS.m in Sources */,
 				BB28C7BC268975B000BDC834 /* PasteboardDevice.m in Sources */,
+				FF7417A4114785A05FB70E36 /* XREFManager.m in Sources */,
+				236CB2C7988005F43538BBA5 /* SyntaxHighlighter.m in Sources */,
+				0C2B184789636EFC2A9A85AD /* LazyDisassembler.m in Sources */,
+				508B7BFF62BD97726C8EE96E /* SystemMonitor.m in Sources */,
+				9DC37D7AB3F5CAE0E5E10CED /* MachOParser.m in Sources */,
+				79C63A254FA2842BF71DA5B3 /* SymbolResolver.m in Sources */,
+				BC1794C1BABA38B2944840A2 /* StackFrameTracker.m in Sources */,
+				0ECE621086700FA55956C222 /* BasicBlock.m in Sources */,
+				80BABCE813E53C955779B7C5 /* CFGBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2342,6 +2454,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = "Debug-ApplePleaseFixFB19282108";
 		};
@@ -2349,6 +2463,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = Release;
 		};
@@ -2356,6 +2472,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 493B378F290F5320000C41ED /* CLI.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = "Debug-ApplePleaseFixFB19282108";
 		};
@@ -2363,6 +2481,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 493B378F290F5320000C41ED /* CLI.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = Release;
 		};
@@ -2437,13 +2557,14 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2456,13 +2577,14 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = iSH;
@@ -2472,12 +2594,14 @@
 		BB4A922524ED9402002F5A96 /* Debug-ApplePleaseFixFB19282108 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = "Debug-ApplePleaseFixFB19282108";
 		};
 		BB4A922624ED9402002F5A96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = Release;
 		};
@@ -2486,6 +2610,7 @@
 			baseConfigurationReference = BB0B85A42586F1CB00208600 /* ProjectDebug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 798;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = "Debug-ApplePleaseFixFB19282108";
 		};
@@ -2494,6 +2619,7 @@
 			baseConfigurationReference = BB0B85A52586F1E100208600 /* ProjectRelease.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 798;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = Release;
 		};
@@ -2501,6 +2627,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				MARKETING_VERSION = 1.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
+				PRODUCT_NAME = XSH;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = "Debug-ApplePleaseFixFB19282108";
 		};
@@ -2508,6 +2639,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				MARKETING_VERSION = 1.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
+				PRODUCT_NAME = XSH;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = Release;
 		};
@@ -2516,6 +2652,7 @@
 			baseConfigurationReference = BB28C7532689522C00BDC834 /* ProjectDebugLinux.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 798;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = DebugLinux;
 		};
@@ -2523,6 +2660,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				MARKETING_VERSION = 1.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
+				PRODUCT_NAME = XSH;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = DebugLinux;
 		};
@@ -2530,6 +2672,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah;
 			};
 			name = DebugLinux;
 		};
@@ -2545,8 +2689,9 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = app/FileProvider/iSHFileProvider.entitlements;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/FileProvider/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).FileProvider";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo.fileprovider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2557,13 +2702,14 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2600,6 +2746,7 @@
 		BB7F620F2688EAB5003C0220 /* DebugLinux */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = DebugLinux;
 		};
@@ -2607,6 +2754,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = DebugLinux;
 		};
@@ -2614,6 +2763,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 493B378F290F5320000C41ED /* CLI.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = DebugLinux;
 		};
@@ -2622,8 +2773,9 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = app/FileProvider/iSHFileProvider.entitlements;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/FileProvider/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).FileProvider";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo.fileprovider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2634,8 +2786,9 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = app/FileProvider/iSHFileProvider.entitlements;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/FileProvider/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).FileProvider";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo.fileprovider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2747,6 +2900,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah;
 			};
 			name = "Debug-ApplePleaseFixFB19282108";
 		};
@@ -2754,6 +2909,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah;
 			};
 			name = Release;
 		};
@@ -2762,6 +2919,7 @@
 			baseConfigurationReference = BB28C7522689522700BDC834 /* ProjectReleaseLinux.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 798;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = ReleaseLinux;
 		};
@@ -2769,6 +2927,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				MARKETING_VERSION = 1.3.4;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
+				PRODUCT_NAME = XSH;
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = ReleaseLinux;
 		};
@@ -2776,6 +2939,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86CD2586FD8800208600 /* App.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah;
 			};
 			name = ReleaseLinux;
 		};
@@ -2791,8 +2956,9 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = app/FileProvider/iSHFileProvider.entitlements;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/FileProvider/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).FileProvider";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo.fileprovider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -2803,13 +2969,14 @@
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
 				INFOPLIST_FILE = app/UITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER).UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.falah.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = iSH;
@@ -2845,6 +3012,7 @@
 		BBEF19B526806D1F001225BD /* ReleaseLinux */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ROOT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = ReleaseLinux;
 		};
@@ -2852,6 +3020,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB0B86D52587009D00208600 /* iOS.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = ReleaseLinux;
 		};
@@ -2859,6 +3029,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 493B378F290F5320000C41ED /* CLI.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = GLBVL5TD9Q;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ish.flo;
 			};
 			name = ReleaseLinux;
 		};

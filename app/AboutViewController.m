@@ -21,10 +21,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *launchCommandField;
 @property (weak, nonatomic) IBOutlet UITextField *bootCommandField;
 
-@property (weak, nonatomic) IBOutlet UITableViewCell *sendFeedback;
-@property (weak, nonatomic) IBOutlet UITableViewCell *openGithub;
-@property (weak, nonatomic) IBOutlet UITableViewCell *openFediverse;
-@property (weak, nonatomic) IBOutlet UITableViewCell *openDiscord;
+@property (weak, nonatomic) IBOutlet UITableViewCell *runSetupCell;
+@property (weak, nonatomic) IBOutlet UITableViewCell *openTelegram;
+@property (weak, nonatomic) IBOutlet UITableViewCell *openSnapchat;
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *upgradeApkCell;
 @property (weak, nonatomic) IBOutlet UILabel *upgradeApkLabel;
@@ -102,14 +101,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (cell == self.sendFeedback) {
-        [UIApplication openURL:@"mailto:tblodt@icloud.com?subject=Feedback%20for%20iSH"];
-    } else if (cell == self.openGithub) {
-        [UIApplication openURL:@"https://github.com/ish-app/ish"];
-    } else if (cell == self.openFediverse) {
-        [UIApplication openURL:@"https://publ.ish.app/ish"];
-    } else if (cell == self.openDiscord) {
-        [UIApplication openURL:@"https://discord.gg/HFAXj44"];
+    if (cell == self.runSetupCell) {
+        [self runSystemSetup];
+    } else if (cell == self.openTelegram) {
+        [UIApplication openURL:@"https://t.me/xfff0800"];
+    } else if (cell == self.openSnapchat) {
+        [UIApplication openURL:@"https://snapchat.com/add/flaah999"];
     } else if (cell == self.exportContainerCell) {
         // copy the files to the app container so they can be extracted from iTunes file sharing
         NSURL *container = ContainerURL();
@@ -160,6 +157,29 @@
 
 - (IBAction)bootCommandChanged:(id)sender {
     UserPreferences.shared.bootCommand = [self.bootCommandField.text componentsSeparatedByString:@" "];
+}
+
+- (void)runSystemSetup {
+    // Show confirmation dialog
+    UIAlertController *confirm = [UIAlertController alertControllerWithTitle:@"Run System Setup"
+                                                                      message:@"This will update your system and install Python 3 with pip.\n\nThis may take 30-60 seconds."
+                                                               preferredStyle:UIAlertControllerStyleAlert];
+
+    [confirm addAction:[UIAlertAction actionWithTitle:@"Run Setup"
+                                                style:UIAlertActionStyleDefault
+                                              handler:^(UIAlertAction *action) {
+        // Dismiss settings and trigger setup
+        [self dismissViewControllerAnimated:YES completion:^{
+            // Post notification to trigger setup in TerminalViewController
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"RunSystemSetup" object:nil];
+        }];
+    }]];
+
+    [confirm addAction:[UIAlertAction actionWithTitle:@"Cancel"
+                                                style:UIAlertActionStyleCancel
+                                              handler:nil]];
+
+    [self presentViewController:confirm animated:YES completion:nil];
 }
 
 @end

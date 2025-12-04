@@ -1,0 +1,25 @@
+digraph "switch_case" {
+    rankdir=TB;
+    node [shape=box, style=filled, fontname="Courier New"];
+
+    block_100002000 [label="0x100002000: SUB SP, SP, #0x20\n0x100002004: CMP X0, #0\n0x100002008: B.EQ loc_100002020", fillcolor=lightblue];
+    block_10000200c [label="0x10000200c: CMP X0, #1\n0x100002010: B.EQ loc_100002030", fillcolor=lightyellow];
+    block_100002014 [label="0x100002014: CMP X0, #2\n0x100002018: B.EQ loc_100002040", fillcolor=lightyellow];
+    block_10000201c [label="0x10000201c: B loc_100002050", fillcolor=lightgray];
+    block_100002020 [label="0x100002020: MOV X0, #100\n0x100002024: B loc_100002058", fillcolor=lightgray];
+    block_100002030 [label="0x100002030: MOV X0, #200\n0x100002034: B loc_100002058", fillcolor=lightgray];
+    block_100002040 [label="0x100002040: MOV X0, #300\n0x100002044: B loc_100002058", fillcolor=lightgray];
+    block_100002050 [label="0x100002050: MOV X0, #-1", fillcolor=lightgray];
+    block_100002058 [label="0x100002058: ADD SP, SP, #0x20\n0x10000205c: RET ", fillcolor=lightcoral];
+
+    block_100002000 -> block_100002020 [color=red, style=solid, label="T"];
+    block_100002000 -> block_10000200c [color=red, style=solid, label="F"];
+    block_10000200c -> block_100002030 [color=red, style=solid, label="T"];
+    block_10000200c -> block_100002014 [color=red, style=solid, label="F"];
+    block_100002014 -> block_100002040 [color=red, style=solid, label="T"];
+    block_100002014 -> block_10000201c [color=red, style=solid, label="F"];
+    block_10000201c -> block_100002050 [color=red, style=bold];
+    block_100002020 -> block_100002058 [color=red, style=bold];
+    block_100002030 -> block_100002058 [color=red, style=bold];
+    block_100002040 -> block_100002058 [color=red, style=bold];
+}

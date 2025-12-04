@@ -1,0 +1,18 @@
+digraph "nested_conditions" {
+    rankdir=TB;
+    node [shape=box, style=filled, fontname="Courier New"];
+
+    block_100003000 [label="0x100003000: SUB SP, SP, #0x20\n0x100003004: CMP X0, #0\n0x100003008: B.LE loc_100003030", fillcolor=lightblue];
+    block_10000300c [label="0x10000300c: CMP X0, #10\n0x100003010: B.LE loc_100003020", fillcolor=lightyellow];
+    block_100003014 [label="0x100003014: MOV X0, #2\n0x100003018: B loc_100003038", fillcolor=lightgray];
+    block_100003020 [label="0x100003020: MOV X0, #1\n0x100003024: B loc_100003038", fillcolor=lightgray];
+    block_100003030 [label="0x100003030: MOV X0, #0", fillcolor=lightgray];
+    block_100003038 [label="0x100003038: ADD SP, SP, #0x20\n0x10000303c: RET ", fillcolor=lightcoral];
+
+    block_100003000 -> block_100003030 [color=red, style=solid, label="T"];
+    block_100003000 -> block_10000300c [color=red, style=solid, label="F"];
+    block_10000300c -> block_100003020 [color=red, style=solid, label="T"];
+    block_10000300c -> block_100003014 [color=red, style=solid, label="F"];
+    block_100003014 -> block_100003038 [color=red, style=bold];
+    block_100003020 -> block_100003038 [color=red, style=bold];
+}

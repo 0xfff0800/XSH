@@ -109,7 +109,7 @@ struct tty {
     bool hung_up;
     bool ever_opened;
 
-#define TTY_BUF_SIZE 4096
+#define TTY_BUF_SIZE 16384  // Increased from 4096 to 16KB for faster I/O
     char buf[TTY_BUF_SIZE];
     // A flag is a marker indicating the end of a canonical mode input. Flags
     // are created by EOL and EOF characters. You can't backspace past a flag.

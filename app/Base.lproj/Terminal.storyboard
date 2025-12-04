@@ -185,7 +185,7 @@
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" image="Paste"/>
                                     <connections>
-                                        <action selector="paste:" destination="dkx-z0-nzr" eventType="primaryActionTriggered" id="cfw-0C-OAd"/>
+                                        <action selector="pasteFromButton:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cfw-0C-OAd"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qw-ie-p4d">

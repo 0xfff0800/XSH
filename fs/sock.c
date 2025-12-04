@@ -60,6 +60,88 @@ int_t sys_socket(dword_t domain, dword_t type, dword_t protocol) {
     }
 #endif
 
+    // Performance optimizations for TCP/IP sockets
+    if (domain == AF_INET_ || domain == AF_INET6_) {
+        // MAXIMUM buffer sizes for fastest throughput
+        // Python pip and APK downloads need very large buffers
+        int rcvbuf = 4 * 1024 * 1024; // 4MB receive buffer (8x increase!)
+        int sndbuf = 2 * 1024 * 1024; // 2MB send buffer (4x increase!)
+        setsockopt(sock, SOL_SOCKET, SO_RCVBUF, &rcvbuf, sizeof(rcvbuf));
+        setsockopt(sock, SOL_SOCKET, SO_SNDBUF, &sndbuf, sizeof(sndbuf));
+
+        if (type == SOCK_STREAM_) {
+            int one = 1;
+
+            // Enable TCP_NODELAY to reduce latency - send data immediately
+            setsockopt(sock, IPPROTO_TCP, TCP_NODELAY, &one, sizeof(one));
+
+            // Enable TCP Keep-Alive
+            setsockopt(sock, SOL_SOCKET, SO_KEEPALIVE, &one, sizeof(one));
+
+#ifdef TCP_QUICKACK
+            // Enable quick ACK for faster response (Linux)
+            setsockopt(sock, IPPROTO_TCP, TCP_QUICKACK, &one, sizeof(one));
+#endif
+
+#ifdef SO_NOSIGPIPE
+            // Prevent SIGPIPE on broken connections (macOS/BSD)
+            setsockopt(sock, SOL_SOCKET, SO_NOSIGPIPE, &one, sizeof(one));
+#endif
+
+#ifdef TCP_FASTOPEN
+            // Enable TCP Fast Open for faster connection establishment
+            int tfo_value = 5; // Queue length for TFO
+            setsockopt(sock, IPPROTO_TCP, TCP_FASTOPEN, &tfo_value, sizeof(tfo_value));
+#endif
+
+            // Aggressive TCP timeout values for faster operation
+#ifdef TCP_KEEPIDLE
+            int keepidle = 20; // Start keepalive after 20 seconds (reduced from 30)
+            setsockopt(sock, IPPROTO_TCP, TCP_KEEPIDLE, &keepidle, sizeof(keepidle));
+#endif
+
+#ifdef TCP_KEEPINTVL
+            int keepintvl = 5; // Interval between keepalive probes (reduced from 10)
+            setsockopt(sock, IPPROTO_TCP, TCP_KEEPINTVL, &keepintvl, sizeof(keepintvl));
+#endif
+
+#ifdef TCP_KEEPCNT
+            int keepcnt = 3; // Number of keepalive probes before giving up
+            setsockopt(sock, IPPROTO_TCP, TCP_KEEPCNT, &keepcnt, sizeof(keepcnt));
+#endif
+
+#ifdef TCP_NOTSENT_LOWAT
+            // Reduce socket buffer low water mark for faster writes
+            int lowat = 16384; // 16KB
+            setsockopt(sock, IPPROTO_TCP, TCP_NOTSENT_LOWAT, &lowat, sizeof(lowat));
+#endif
+
+#ifdef SO_TRAFFIC_CLASS
+            // Set high priority traffic class (iOS specific)
+            int traffic_class = SO_TC_AV; // Audio/Video class for low latency
+            setsockopt(sock, SOL_SOCKET, SO_TRAFFIC_CLASS, &traffic_class, sizeof(traffic_class));
+#endif
+
+#ifdef SO_NET_SERVICE_TYPE
+            // Network service type for iOS - responsiveness
+            int service_type = NET_SERVICE_TYPE_RV; // Responsive data
+            setsockopt(sock, SOL_SOCKET, SO_NET_SERVICE_TYPE, &service_type, sizeof(service_type));
+#endif
+
+            // Disable linger to close connections faster
+            struct linger lng = {0, 0};
+            setsockopt(sock, SOL_SOCKET, SO_LINGER, &lng, sizeof(lng));
+
+            // Enable reuse of address for faster reconnections
+            setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &one, sizeof(one));
+
+#ifdef SO_REUSEPORT
+            // Enable port reuse (macOS/BSD)
+            setsockopt(sock, SOL_SOCKET, SO_REUSEPORT, &one, sizeof(one));
+#endif
+        }
+    }
+
     fd_t f = sock_fd_create(sock, domain, type, protocol);
     if (f < 0)
         close(sock);

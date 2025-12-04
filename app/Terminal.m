@@ -66,7 +66,7 @@ typedef struct linux_tty *tty_t;
 @implementation Terminal
 @synthesize webView = _webView;
 
-static const int BUF_SIZE = 1<<14;
+static const int BUF_SIZE = 1<<16;  // 64KB buffer (increased from 16KB) for faster data processing
 
 static NSMapTable<NSNumber *, Terminal *> *terminals;
 static NSMapTable<NSUUID *, Terminal *> *terminalsByUUID;
@@ -187,6 +187,17 @@ static NSMapTable<NSUUID *, Terminal *> *terminalsByUUID;
     }
     [_pendingData appendData:[NSData dataWithBytes:buf length:len]];
     [self.refreshTask schedule];
+
+    // Post notification with output data for download monitoring
+    if (len > 0) {
+        NSData *outputData = [NSData dataWithBytes:buf length:len];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"TerminalOutputReceived"
+                                                                object:self
+                                                              userInfo:@{@"data": outputData}];
+        });
+    }
+
     unlock(&_dataLock);
 #else
     @synchronized (self) {
@@ -196,6 +207,14 @@ static NSMapTable<NSUUID *, Terminal *> *terminalsByUUID;
         if (len > 0) {
             [_pendingData appendData:[NSData dataWithBytes:buf length:len]];
             [_refreshTask schedule];
+
+            // Post notification with output data for download monitoring
+            NSData *outputData = [NSData dataWithBytes:buf length:len];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"TerminalOutputReceived"
+                                                                    object:self
+                                                                  userInfo:@{@"data": outputData}];
+            });
         }
     }
 #endif

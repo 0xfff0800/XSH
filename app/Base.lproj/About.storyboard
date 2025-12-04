@@ -200,14 +200,14 @@
                             </tableViewSection>
                             <tableViewSection footerTitle="" id="DVR-sH-TdL">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="g6W-FX-yYa" style="IBUITableViewCellStyleDefault" id="gMm-4C-5X3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="RunSetup-Label" style="IBUITableViewCellStyleDefault" id="RunSetup-Cell">
                                         <rect key="frame" x="0.0" y="379" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gMm-4C-5X3" id="mVT-2h-5kM">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RunSetup-Cell" id="RunSetup-Content">
                                             <rect key="frame" x="0.0" y="0.0" width="293.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Send Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g6W-FX-yYa">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Run System Setup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RunSetup-Label">
                                                     <rect key="frame" x="16" y="0.0" width="269.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -217,14 +217,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Fe5-tr-fWm" style="IBUITableViewCellStyleDefault" id="F4i-eC-hQ6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Telegram-Label" style="IBUITableViewCellStyleDefault" id="Telegram-Cell">
                                         <rect key="frame" x="0.0" y="422.5" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F4i-eC-hQ6" id="gU6-0E-hOf">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Telegram-Cell" id="Telegram-Content">
                                             <rect key="frame" x="0.0" y="0.0" width="293.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="iSH on GitHub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fe5-tr-fWm">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Contact on Telegram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Telegram-Label">
                                                     <rect key="frame" x="16" y="0.0" width="269.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -234,31 +234,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="xMw-wC-igF" style="IBUITableViewCellStyleDefault" id="K5r-jy-Dzl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="Snapchat-Label" style="IBUITableViewCellStyleDefault" id="Snapchat-Cell">
                                         <rect key="frame" x="0.0" y="466" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K5r-jy-Dzl" id="UIr-IB-yu1">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Snapchat-Cell" id="Snapchat-Content">
                                             <rect key="frame" x="0.0" y="0.0" width="293.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="iSH Discord Server" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xMw-wC-igF">
-                                                    <rect key="frame" x="16" y="0.0" width="269.5" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="wyO-AY-ccm" style="IBUITableViewCellStyleDefault" id="bge-GA-6p8">
-                                        <rect key="frame" x="0.0" y="509.5" width="320" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bge-GA-6p8" id="JXA-Ff-hkB">
-                                            <rect key="frame" x="0.0" y="0.0" width="293.5" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="iSH on the Fediverse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wyO-AY-ccm">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Contact on Snapchat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Snapchat-Label">
                                                     <rect key="frame" x="16" y="0.0" width="269.5" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -391,12 +374,11 @@
                         <outlet property="disableDimmingSwitch" destination="cPj-sQ-qsh" id="Kjp-xA-A0Y"/>
                         <outlet property="exportContainerCell" destination="OIE-9g-Btx" id="qxo-l5-0Mq"/>
                         <outlet property="launchCommandField" destination="gDx-hv-hhV" id="RQn-gk-Dx8"/>
-                        <outlet property="openDiscord" destination="K5r-jy-Dzl" id="b4l-Vr-6l8"/>
-                        <outlet property="openFediverse" destination="bge-GA-6p8" id="ghM-X8-itm"/>
-                        <outlet property="openGithub" destination="F4i-eC-hQ6" id="66M-sQ-RJR"/>
+                        <outlet property="runSetupCell" destination="RunSetup-Cell" id="RunSetup-Outlet"/>
+                        <outlet property="openTelegram" destination="Telegram-Cell" id="Telegram-Outlet"/>
+                        <outlet property="openSnapchat" destination="Snapchat-Cell" id="Snapchat-Outlet"/>
                         <outlet property="resetMountsCell" destination="Bqt-ud-CI0" id="2AS-2S-XCr"/>
                         <outlet property="saddamHussein" destination="bcR-YQ-PkC" id="mUA-6I-CB9"/>
-                        <outlet property="sendFeedback" destination="gMm-4C-5X3" id="nhX-ZH-zyP"/>
                         <outlet property="themeCell" destination="dqn-Cd-cNm" id="dfh-et-0o7"/>
                         <outlet property="upgradeApkBadge" destination="l5o-Y7-j4W" id="AI2-IM-NVw"/>
                         <outlet property="upgradeApkCell" destination="Huf-xT-ejJ" id="CBX-wc-11e"/>

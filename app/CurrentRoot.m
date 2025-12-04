@@ -102,6 +102,7 @@ void FsUpdateRepositories(void) {
     NSString *currentVersionFile = [NSString stringWithFormat:@"%d\n", fs_ish_apk_version];
     write_file("/ish/apk-version", currentVersionFile.UTF8String, [currentVersionFile lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
     remove_directory("/ish/apk");
+
     dispatch_async(dispatch_get_main_queue(), ^{
         [NSNotificationCenter.defaultCenter postNotificationName:FsUpdatedNotification object:nil];
     });

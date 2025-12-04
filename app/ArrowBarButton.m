@@ -49,12 +49,17 @@ static CGPoint anchors[] = {
     [self addTextLayer:@"←" direction:ArrowLeft];
     [self addTextLayer:@"→" direction:ArrowRight];
     [self layoutSublayersOfLayer:self.layer];
-    
-    self.layer.cornerRadius = 5;
-    self.layer.shadowOffset = CGSizeMake(0, 1);
-    self.layer.shadowOpacity = 0.4;
-    self.layer.shadowRadius = 0;
-    
+
+    // Enhanced visual appearance matching BarButton improvements
+    self.layer.cornerRadius = 8; // Increased from 5 for modern look
+    self.layer.shadowOffset = CGSizeMake(0, 2); // Slightly deeper shadow
+    self.layer.shadowOpacity = 0.3; // Softer shadow
+    self.layer.shadowRadius = 2; // Blur the shadow for better depth
+
+    // Add subtle border for better definition
+    self.layer.borderWidth = 0.5;
+    self.layer.borderColor = [UIColor colorWithWhite:0 alpha:0.1].CGColor;
+
     self.accessibilityUpDown = YES;
 }
 
@@ -175,6 +180,12 @@ static CGPoint anchors[] = {
         [self animateLayerUpdates];
         [self.timer invalidate];
         if (direction != ArrowNone) {
+            // Add haptic feedback when arrow direction changes
+            if (@available(iOS 10.0, *)) {
+                UIImpactFeedbackGenerator *feedback = [[UIImpactFeedbackGenerator alloc] initWithStyle:UIImpactFeedbackStyleLight];
+                [feedback impactOccurred];
+            }
+
             [self sendActionsForControlEvents:UIControlEventValueChanged];
             self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 repeats:NO block:^(NSTimer *timer) {
                 [self sendActionsForControlEvents:UIControlEventValueChanged];

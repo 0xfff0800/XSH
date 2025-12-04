@@ -2,8 +2,8 @@
 #include "emu/cpu.h"
 
 // keep in sync with asm
-#define FIBER_RETURN_CACHE_SIZE 4096
-#define FIBER_RETURN_CACHE_HASH(x) ((x) & 0xFFF0) >> 4)
+#define FIBER_RETURN_CACHE_SIZE 8192
+#define FIBER_RETURN_CACHE_HASH(x) ((x) & 0x1FFF0) >> 4)
 
 struct fiber_frame {
     struct cpu_state cpu;
