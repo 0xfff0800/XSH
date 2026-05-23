@@ -90,7 +90,7 @@ After first launch setup:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/XSH.git
+git clone https://github.com/0xfff0800/XSH.git
 cd XSH
 
 # Initialize submodules
